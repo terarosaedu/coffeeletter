@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TERAROSA 교육 & 서비스 소식지 [26년-4]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"/>
+  <!-- CSS 파일 연결 -->
+  <link rel="stylesheet" href="26_4.css">
+</head>
+<body>
+
+<!-- 최상단 로고랑 제목 있는 부분 -->
+<header class="header-wrap">
+  <div class="header-top">
+    <button class="archive-btn" onclick="toggleArchive()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      소식지 목록
+    </button>
+    <div class="archive-panel" id="archivePanel">
+      <div class="archive-panel-title">Archive</div>
+      
+      <!-- 현재 페이지 (26-4) -->
+      <div class="archive-item" onclick="scrollToTop()" style="cursor: pointer;">
+        <span class="a-dot"></span>
+        VOL. 26-4
+      </div>
+
+      <!-- 이전 페이지 링크들 -->
+      <div class="archive-item" onclick="location.href='../26_3/26_3.html'" style="cursor: pointer;">
+        <span class="a-dot" style="background-color: transparent; border: 1px solid #ccc;"></span>
+        VOL. 26-3
+      </div>
+      <div class="archive-item" onclick="location.href='../26_2/26_2.html'" style="cursor: pointer;">
+        <span class="a-dot" style="background-color: transparent; border: 1px solid #ccc;"></span>
+        VOL. 26-2
+      </div>
+      <div class="archive-item" onclick="location.href='../26_1/26_1.html'" style="cursor: pointer;">
+        <span class="a-dot" style="background-color: transparent; border: 1px solid #ccc;"></span>
+        VOL. 26-1
+      </div>
+    </div>
+    <img class="logo-img" src="../img/logo.png" alt="TERAROSA" />
+    <div class="header-right">
+      <div class="issue">VOL. 26-4</div>
+      <div class="date">2026 V4 · 교육서비스팀</div>
+    </div>
+  </div>
+  <div class="header-title-band">
+    <h1>교육 & 서비스 소식지</h1>
+    <p>EDUCATION & SERVICE NEWSLETTER · 2026 SEP</p>
+  </div>
+</header>
+
+<!-- 메뉴바 -->
+<nav class="nav-bar">
+  <div class="nav-item active" onclick="scrollToSection('article', this)">아티클</div>
+  <div class="nav-item" onclick="scrollToSection('report', this)">교육 리포트</div>
+  <div class="nav-item" onclick="scrollToSection('calendar', this)">교육 캘린더</div>
+</nav>
+
+<!-- 내용 있는 부분 -->
+<main class="main">
+
+  <section id="article">
+    <div class="sec-head fade-up">
+      <div class="sec-head-bar"></div>
+      <div class="sec-head-inner">
+        <div class="sec-head-en">01 · Article</div>
+        <div class="sec-head-ko">아티클</div>
+      </div>
+    </div>
+
+    <div class="article-card fade-up d1">
+      <div class="article-content-wrapper">
+        <div class="article-meta-bar">
+          <span class="a-meta-tag">VOL.26-4</span>
+          <span class="a-meta-sep">·</span>
+          <span class="a-meta-cat">Store Operation Insight</span>
+        </div>
+
+        <h2 class="article-title">
+          갑작스러운 위기 앞에서도<br>우리가 흔들리지 않고 서로를 지킬 수 있도록<br>
+          <span class="article-title-sub">테라로사 현장 돌발상황 응대 가이드</span>
+        </h2>
+
+        <p class="article-lead">
+          매장 문을 열고 마감하는 순간까지, 현장에는 정말 많은 일들이 일어납니다. 평화롭던 바(Bar)에서 커피 머신이 갑자기 멈추거나, 누군가 미끄러지거나, 예상치 못한 항의를 받는 등 가슴 철렁한 순간들이 있죠. 당황스러운 마음은 모두가 똑같을 거예요. 하지만 그 예기치 못한 순간, 우리가 어떤 표정과 태도로 상황을 마주하느냐에 따라 현장의 공기는 완전히 달라집니다. 오늘은 위기 앞에서도 우리와 고객을 안전하게 지켜주는 작지만 단단한 약속들에 대해 이야기해 보려 합니다.
+        </p>
+
+        <div style="background-color: #fcfcfc; border-left: 4px solid #d32f2f; padding: 24px 28px; margin: 40px 0; border-radius: 0 8px 8px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+          <h3 style="font-size: 17px; color: #111; margin-top: 0; margin-bottom: 12px; font-weight: 700;">🚨 우리가 마주하는 '돌발상황'이란?</h3>
+          <p style="font-size: 15px; color: #333; margin: 0; line-height: 1.6; word-break: keep-all;">
+            매장의 평온한 일상을 멈추게 하는 모든 <strong>"비정상적인 순간들"</strong>을 의미해요. 고객이나 직원의 다칠 뻔한 아찔한 순간부터 기기 고장으로 서비스가 멈추는 상황까지, 즉각적인 판단과 도움이 필요한 순간들이 모두 포함됩니다.
+          </p>
+        </div>
+
+        <p class="article-text">
+          돌발상황이 발생하면 누구나 당황하고 조급해지기 마련입니다. 이때 가장 중요한 건, <strong>고객의 놀란 마음에는 '따뜻하게 공감'하되, 상황을 정리할 때는 '차분하고 명확한 기준'을 갖는 것</strong>입니다. 현장의 혼란을 막고 모두를 안심시켜 줄 4가지 다정한 스텝을 소개합니다.
+        </p>
+
+        <!-- 4단계 카드 디자인(스타일) 복구 -->
+        <style>
+          .crisis-section {
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f3fc 100%);
+            padding: 40px 24px;
+            border-radius: 16px;
+            margin: 50px 0;
+          }
+          .crisis-badge {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #3730a3;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+          }
+          .crisis-title {
+            font-size: 22px;
+            color: #111;
+            margin-top: 0;
+            margin-bottom: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+          }
+          .process-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+          }
+          .process-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            padding: 24px 20px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+          }
+          .step-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            align-self: flex-start;
+            letter-spacing: 0.5px;
+          }
+          .step-icon-wrap {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            margin-bottom: 16px;
+          }
+          .bg-number {
+            position: absolute;
+            bottom: -20px;
+            right: -5px;
+            font-size: 110px;
+            font-weight: 900;
+            line-height: 1;
+            z-index: 0;
+          }
+          .card-content {
+            position: relative;
+            z-index: 1;
+          }
+          
+          .c-step1 { border-top: 4px solid #3b82f6; }
+          .c-step1 .step-badge { background: #eff6ff; color: #3b82f6; }
+          .c-step1 .step-icon-wrap { background: #3b82f6; color: #fff; }
+          .c-step1 .bg-number { color: rgba(59, 130, 246, 0.05); }
+
+          .c-step2 { border-top: 4px solid #8b5cf6; }
+          .c-step2 .step-badge { background: #f5f3ff; color: #8b5cf6; }
+          .c-step2 .step-icon-wrap { background: #8b5cf6; color: #fff; }
+          .c-step2 .bg-number { color: rgba(139, 92, 246, 0.05); }
+
+          .c-step3 { border-top: 4px solid #ec4899; }
+          .c-step3 .step-badge { background: #fdf2f8; color: #ec4899; }
+          .c-step3 .step-icon-wrap { background: #ec4899; color: #fff; }
+          .c-step3 .bg-number { color: rgba(236, 72, 153, 0.05); }
+
+          .c-step4 { border-top: 4px solid #f97316; }
+          .c-step4 .step-badge { background: #fff7ed; color: #f97316; }
+          .c-step4 .step-icon-wrap { background: #f97316; color: #fff; }
+          .c-step4 .bg-number { color: rgba(249, 115, 22, 0.05); }
+
+          @media (max-width: 480px) {
+            .process-grid { grid-template-columns: 1fr; }
+          }
+        </style>
+
+        <div class="crisis-section">
+          <div class="crisis-badge">CRISIS RESPONSE</div>
+          <h3 class="crisis-title">우리가 마음을 전하는 4가지 스텝</h3>
+
+          <div class="process-grid">
+            <div class="process-card c-step1">
+              <div class="bg-number">1</div>
+              <div class="card-content">
+                <div class="step-badge">STEP 1</div>
+                <div class="step-icon-wrap">🫶</div>
+                <div style="font-weight: 800; font-size: 16px; margin-bottom: 8px; color: #111;">마음 먼저 다독이기</div>
+                <div style="font-size: 13.5px; color: #555; word-break: keep-all; line-height: 1.5;">"많이 놀라셨죠?" 고객의 당황스러운 마음에 먼저 다가가 진심으로 공감하고 안심시켜 드려요.</div>
+              </div>
+            </div>
+
+            <div class="process-card c-step2">
+              <div class="bg-number">2</div>
+              <div class="card-content">
+                <div class="step-badge">STEP 2</div>
+                <div class="step-icon-wrap">📢</div>
+                <div style="font-weight: 800; font-size: 16px; margin-bottom: 8px; color: #111;">있는 그대로 안내하기</div>
+                <div style="font-size: 13.5px; color: #555; word-break: keep-all; line-height: 1.5;">"현재 이런 상황입니다." 섣부른 추측보다는, 지금 확실하게 파악된 사실만을 차분하게 전해주세요.</div>
+              </div>
+            </div>
+
+            <div class="process-card c-step3">
+              <div class="bg-number">3</div>
+              <div class="card-content">
+                <div class="step-badge">STEP 3</div>
+                <div class="step-icon-wrap">🛠️</div>
+                <div style="font-weight: 800; font-size: 16px; margin-bottom: 8px; color: #111;">투명하게 과정 공유하기</div>
+                <div style="font-size: 13.5px; color: #555; word-break: keep-all; line-height: 1.5;">"이렇게 해결하고 있습니다." 고객이 안심할 수 있도록 우리가 문제를 해결하기 위해 노력하는 과정을 투명하게 공유합니다.</div>
+              </div>
+            </div>
+
+            <div class="process-card c-step4">
+              <div class="bg-number">4</div>
+              <div class="card-content">
+                <div class="step-badge">STEP 4</div>
+                <div class="step-icon-wrap">🤝</div>
+                <div style="font-weight: 800; font-size: 16px; margin-bottom: 8px; color: #111;">다정하게 협조 구하기</div>
+                <div style="font-size: 13.5px; color: #555; word-break: keep-all; line-height: 1.5;">"안전을 위해 부탁드립니다." 모두의 안전과 원활한 해결을 위해 현장에서 꼭 지켜주셔야 할 부분들을 정중하게 요청합니다.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background-color: #fff5f5; border: 1px solid #ffcdd2; border-radius: 12px; padding: 24px; margin: 40px 0;">
+          <h3 style="font-size: 16px; color: #d32f2f; margin-top: 0; margin-bottom: 16px; font-weight: 700; display: flex; align-items: center; gap: 6px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            서로를 위해 이것만은 꼭 지켜주세요
+          </h3>
+          <ul style="margin: 0; padding-left: 20px; color: #333; font-size: 14.5px; line-height: 1.8; word-break: keep-all;">
+            <li>"저희 잘못이 아닙니다"라는 식의 <strong>방어적인 태도나 책임 회피는 고객의 마음을 닫히게 해요.</strong></li>
+            <li>"아마 이럴 겁니다"라는 막연한 추측은 현장의 불안을 키울 수 있어요. 꼭 <strong>확인된 사실만</strong> 전해주세요.</li>
+            <li>나 혼자 무리해서 제압하거나 해결하려 하지 마세요. <strong>언제나 직원과 고객의 안전이 0순위</strong>입니다.</li>
+          </ul>
+        </div>
+
+        <p class="article-text">
+          이번호에는 우리가 현장에서 가져야 할 마음가짐의 큰 그림을 그려보았습니다. 다음호부터는 '안전 사고', '설비 고장' 등 실제 상황에서 당황하지 않고 바로 꺼내 쓸 수 있는 구체적인 이야기들을 하나씩 풀어갈게요. 오늘도 예상치 못한 수많은 변수들 속에서 묵묵히 테라로사의 공간을 따뜻하게 지켜주시는 여러분, 정말 고맙습니다.
+        </p>
+
+        <hr class="article-hr"/>
+
+        <div class="article-author">
+          <div class="author-icon">☕</div>
+          <div>
+            <div class="author-name">TERAROSA 교육서비스팀</div>
+            <div class="author-role">Updated September 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider" />
+
+  <section id="report">
+    <div class="sec-head fade-up">
+      <div class="sec-head-bar"></div>
+      <div class="sec-head-inner">
+        <div class="sec-head-en">02 · Education Report</div>
+        <div class="sec-head-ko">교육 리포트</div>
+      </div>
+    </div>
+    <div class="report-intro fade-up d1">2026 SEP · 교육 과정 현황</div>
+
+    <div class="stat-grid" id="statGrid"></div>
+
+    <div class="summary-row">
+      <div class="summary-label">2026 SEP TOTAL COMPLETIONS</div>
+      <div class="summary-total">총 457명 수료<small>점장/세컨 교육 수료자 66인 포함</small></div>
+    </div>
+  </section>
+
+  <hr class="sec-divider" />
+
+  <section id="calendar">
+    <div class="sec-head fade-up">
+      <div class="sec-head-bar"></div>
+      <div class="sec-head-inner">
+        <div class="sec-head-en">03 · Education Calendar (Upcoming Events)</div>
+        <div class="sec-head-ko">교육 캘린더</div>
+      </div>
+    </div>
+
+    <div class="cal-frame">
+      <iframe id="calIframe"
+        src="https://calendar.google.com/calendar/embed?src=terarosaeducation%40gmail.com&ctz=Asia%2FSeoul&mode=MONTH&dates=20260901%2F20260930"
+        title="TERAROSA 교육 캘린더"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+</main>
+
+<button class="top-btn" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="맨 위로">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+  <span>TOP</span>
+</button>
+
+<footer class="footer">
+  <img class="footer-logo" src="../img/logo.png" alt="TERAROSA" />
+  <div class="footer-text">
+    교육&서비스 소식지 · VOL.26-4<br/>
+    © 2026 TERAROSA Education Service Team
+  </div>
+</footer>
+
+<!-- JS 파일 연결 -->
+<script src="26_4.js"></script>
+</body>
+</html>
