@@ -7,7 +7,7 @@
   { name: '커피 베리에이션 교육', count: 24,  max: 200, unit: '명' },
   { name: '브루잉 교육',          count: 9,  max: 200, unit: '명' },
   { name: '커핑 초급 교육',       count: 16,  max: 160, unit: '명' },
-  { name: '점장/세컨 교육',       count: 3,  max: 13,  unit: '회' },
+  { name: '점장/세컨 교육',       count: 3,  max: 11,  unit: '회' },
 ];
 
 const grid = document.getElementById('statGrid');
